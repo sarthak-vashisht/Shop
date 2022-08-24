@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HomeCss.css">
+    <title>Home</title>
+</head>
+<body>
+   
+    <nav>
+        <a href="Home.html">HOME</a> 
+        <a href="NewContact.html">CONTACT US</a> 
+        <a href="NewAbout.html">ABOUT US</a> 
+        <a class="login" href="NewLogin.html">LOGIN / SignUP</a> 
+        <a href="NewFeedback.html">FEEDBACK</a> 
+        <a href="demo.html">REVIEWS</a>
+       
+    </nav>
+    <section>
+        <a href="#">SHOP</a>
+        <P class="small" style="width: fit-content;margin:auto;font-weight: 700;padding: 5px 10px;">Everything APPLE</P>
+    </section>
+    <div class="Slideshow" style="max-width:500px">
+        <img class="mySlides" src="Slider-1.jpg" style="width:1500px" height="750px">
+        <img class="mySlides" src="Slider-2.png" style="width:1500px" height="750px">
+        <img class="mySlides" src="Slider-3.jpg" style="width:1500px" height="750px">
+        <!-- <img class="mySlides" src="Slider-4.jpg" style="width:1500px" height="750px"> -->
+        <img class="mySlides" src="Slider-5.jpg" style="width:1500px" height="750px">
+      </div>
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2500); // Change image every 2 seconds
+        }
+        </script>
+        <br>
+        <br>
+        <br>
+        
+        <p class="products">PRODUCTS</p>
+      <!-- <main1>  
+      <img class="product1" src="mobile.jpg" alt="Iphone" width="400px" height="400px">
+      <img class="product2" src="Earpds.jpg" alt="Iphone" width="400px" height="400px">
+      <img class="product2" src="Watch.jpg" alt="Iphone" width="450px" height="400px">
+      </main1>  -->
+      
+      <hr>
+      <main3>
+      <div class="card">
+
+    <div class="image">
+       <img src="mobile.jpg" height="300px">
+    </div>
+    <div class="title">
+     <h1> Apple Iphone</h1>
+    </div>
+    <div class="des">
+     <button on">Buy Now</button>
+    </div>
+    </div>
+  </main3>
+    <div class="card">
+
+      <div class="image">
+         <img src="Watch.jpg" height="300px">
+      </div>
+      <div class="title">
+       <h1> Apple Watch</h1>
+      </div>
+      <div class="des">
+       <button onclick="window.location.href = 'https://www.amazon.in/ref=nav_logo';">Buy Now</button>
+      </div>
+      </div>
+      <div class="card">
+
+        <div class="image">
+           <img src="Earpds.jpg" height="300px">
+        </div>
+        <div class="title">
+         <h1> Apple Earpods</h1>
+        </div>
+        <div class="des">
+         <button onclick="window.location.href = 'https://www.amazon.in/ref=nav_logo';">Buy Now</button>
+        </div>
+        </div>
+        <div class="card">
+
+          <div class="image">
+             <img src="mac.jpg" height="300px">
+          </div>
+          <div class="title">
+           <h1> Apple Macbook</h1>
+          </div>
+          <div class="des">
+           <button onclick="window.location.href = 'https://www.amazon.in/ref=nav_logo';">Buy Now</button>
+          </div>
+          </div>
+    <p class="search">What Are You Searching For ?</p>
+   <P class="bar">SEARCH &nbsp;<input type="search" name="Search" id="BAR"></P>
+   <br>
+   <br>
+   <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <!-- <a href="#">&copy; 2020 | Apni Kaksha</a>
+    </footer> -->
+   <script>
+    var search=document.getElementById('BAR');
+    search.addEventListener("keydown",function(e){
+      if(e.key=="Enter"){
+        alert("No search Found");
+        search.value="";
+      }
+    })
+   </script>
+</body>
+</html>

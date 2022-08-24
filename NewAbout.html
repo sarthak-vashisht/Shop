@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<link rel="stylesheet" type="text/css" href="NewAbout.css.css">
+</head>	
+<body>
+    <nav>
+        <a href="Home.html">HOME</a> 
+        <a href="NewContact.html">CONTACT US</a> 
+        <a href="NewAbout.html">ABOUT US</a> 
+        
+        <a class="login" href="NewLogin.html">LOGIN / SignUP</a> 
+        
+    </nav>
+	
+    <div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>About Us</h1>
+				</div>
+				<div class="content">
+					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
+					<p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<div id="btn" class="button">
+						<a href="">Read More</a>
+					</div>
+				</div>
+				<div class="social">
+					<a href=""><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="image-section">
+				<img src="about_us.gif">
+			</div>
+		</div>
+	</div>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <!-- <a href="#">&copy; 2020 | Apni Kaksha</a> -->
+    </footer>
+
+	<script>
+        var btn=document.getElementById('btn');
+        btn.addEventListener("click",function(){
+            var demo=document.getElementById('demo');
+            var text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo voluptas, eius ad tenetur harum nulla ratione sequi, dicta odio beatae culpa animi optio aut quia accusantium, eos cupiditate quae!";
+            demo.append(text);
+        })
+    </script>
+</body>
+</html>
+

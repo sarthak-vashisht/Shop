@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="NewLogin.css">
+</head>
+<body>
+    <nav>
+        <a href="Home.html">HOME</a> 
+        <a href="NewContact.html">CONTACT US</a> 
+        <a href="NewAbout.html">ABOUT US</a> 
+        <a class="Login" href="#">LOGIN / SignUP</a> 
+    </nav>
+    <div class="Login-form">
+        <h1>Login Form</h1>
+        <form>
+            <p>User Name</p>
+            <input type="text" id="username" name="User" placeholder="User Name">
+            <p>Password</p>
+            <input type="password" id="password" name="pass" placeholder="Password">
+            <button id="btn" type="submit">Login</button>
+        </form>
+        <p style="color:white;">New to this Website? <a href="NewSignUP.html" style="color: red;text-decoration:none;">SignUP here </a></p>
+    </div>
+    
+    <script>
+        var btn=document.getElementById('btn');
+        btn.addEventListener("click",function(e){
+            var username=document.getElementById('username').value;
+            var password=document.getElementById('password').value;
+
+            if(username.length<4){
+                alert("The length of username should not be less than 4 characters.");
+                e.preventDefault();
+                return;
+            }
+            if(password.length<8){
+                alert("The length of password should not be less tha 8 characters.");
+                e.preventDefault();
+                return;
+            }
+            alert("Your responses have been submitted.");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+	
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.section{
+	/* width: 100%; */
+	min-height: 100vh;
+	background-color: white;
+    margin-top: 0px;
+}
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 300px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: #a52a2a;
+	color:#fff;
+}
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:#3d3d3d;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
+}
+
+}
+.navbar{
+    background-color: black;
+    color: white;
+    border-bottom: 0.5px solid gray;
+    width: 100%;
+    font-size: 18px;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+
+}
+.navbar a.nav-logo{
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bold;
+
+}
+.navbar ul{
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 0 10px;
+    height: 100%;
+    margin-top: 3px;
+    padding: 10px 20px;
+}
+
+.navbar ul li a{
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.navbar ul li a:hover{
+    background-color: gray;
+}
+.navbar ul li a:hover{
+    background-color: gray;
+}
+
+#searchbar{
+    height: 30px;
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 50px;
+    border-style: none;
+    background-color: black;
+    border-bottom: 2px solid white;
+    font-size: 1.2rem;
+    padding: 2px 10px;
+    color: white;
+}
+
+#searchbar:focus{
+    outline: none;
+}
+
+#searchbar::placeholder{
+    color: white;
+}
+.image-section img{
+    height: 275px;
+    
+    
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    margin: 0px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    padding: 40px;
+    float: left;
+    color: white;
+    font-size: 18px;
+    
+}
+nav a:hover{
+    color: wheat;
+}
+.login{
+    float: right;
+
+}
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+    
+}

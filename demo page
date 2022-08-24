@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <title>Demo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: rgb(184,184,184);
+            background: radial-gradient(circle, rgba(184,184,184,1) 0%, rgba(255,255,255,1) 100%);
+            font-family: 'Work Sans', sans-serif;
+        }
+        .heading{
+            font-weight: bold;
+            text-align: center;
+            font-size: 50px;
+            color: whitesmoke;
+            border-radius: 0 0 15px 15px;
+            padding: 25px 75px;
+            margin: 0 100px;
+            background-color: black;
+        }
+        .content{
+            display: flex;
+            justify-content: space-around;
+            padding: 45px;
+        }
+        .video1{
+            width: 600px;
+            height: 400px;
+        }
+        .video2{
+            width: 700px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <span>REVIEWS</span>
+    </div>
+
+    <div class="content">
+        
+        <iframe class="video1" src="https://www.youtube.com/embed/5zuXeN1ReSw" title="Apple iPhone 13 Pro Review - The Best iPhone Yet !" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video1" src="https://www.youtube.com/embed/2cd7MnpmwfQ" title="This is the Fastest Laptop in the World ! *Apple M1 Max*" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="content">  
+        <iframe class="video2" src="https://www.youtube.com/embed/YmLZux8tm7E" title="Garmin Venu 2 Plus Unboxing - The Ultimate Garmin Smartwatch Experience?🔥🔥🔥" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="content">
+            <iframe class="video1" src="https://www.youtube.com/embed/oyXqyvfejB8" title="Samsung 8K TV Unboxing and review!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video1" src="https://www.youtube.com/embed/UXPo_ePuPsY" title="These Earphones have Majedaar 3D Audio ! *Samsung Buds Pro*" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>  
+
+    
+
+
+</body>
+</html>
